@@ -1,0 +1,54 @@
+
+.container1 h1{
+    color: #000;
+    margin: auto ;
+    position: relative;
+    text-align: center;
+    top: -2rem;
+    margin-top: 5rem;
+}
+
+.content1 .kuli{
+  display: grid;
+  grid-template-columns: repeat(4,300px);
+  margin-left: 2rem;
+}
+
+.content1 .kuli button{
+    padding: 0.5rem 1rem;
+    background: var(--primary-color);
+    border-radius: 5px;
+    color: var(--second-white);
+    margin-left: 2rem;
+    cursor: pointer;
+    transition: .5s ease;
+}
+.content1 .kuli button:hover{
+ background-color: var(--hover-color);
+ 
+}
+.content1 .kuli img{
+    width: 200px;
+    height: 150px;
+}
+
+@media screen and (max-width:940px) {
+    .content1 .kuli{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .abaya img, .comp img, .shart img, .suit img{
+        border: 5px solid crimson;
+    }
+
+    .content1 .kuli img{
+      
+        width: 50%;
+        height: 0%;
+
+    }
+
+ 
+    
+}
