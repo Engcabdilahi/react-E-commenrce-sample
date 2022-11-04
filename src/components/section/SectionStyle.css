@@ -7,6 +7,9 @@
     top: -2rem;
     margin-top: 5rem;
 }
+.container1 .line{
+    border: 2px solid rgb(231, 194, 194);
+}
 
 .content1 .kuli{
   display: grid;
@@ -22,7 +25,12 @@
     margin-left: 2rem;
     cursor: pointer;
     transition: .5s ease;
+    margin-top: 1rem;
 }
+  .abaya , .comp , .shart , .suit {
+        text-align: center;
+        padding: 1rem;
+    }
 .content1 .kuli button:hover{
  background-color: var(--hover-color);
  
