@@ -1,32 +1,15 @@
 import React from 'react'
 import './HeaderStyle.css'
-import { useState } from 'react';
 import { useSelector } from "react-redux";
+
 
 const Header = () => {
   
   const data = useSelector((state) => state.data);
 
-
- 
-  const [nav, setNav] = useState(false);
-  const handleNav = () => setNav(!nav);
   return (
     <div className="container">
-      <div className="logo">
-        <h1>
-          EMA<span>ARA</span>
-        </h1>
-
-        <ul className={nav ? "nav-menu active" : "nav-menu"}>
-          <li>Home</li>
-          <li>Services</li>
-          <li>Contact</li>
-        </ul>
-        <i className=" fa fa-bars menu" onClick={handleNav}></i>
-
-        
-
+      <div className="logo1">
         <i className=" fa fa-shopping-cart cart">
           <div className="tiro">  {data.value}</div>
         </i>

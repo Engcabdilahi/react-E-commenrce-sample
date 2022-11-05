@@ -1,0 +1,86 @@
+.logo{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5rem;
+    height: 10vh;
+    width: 70%;
+}
+.logo h1{
+    cursor: pointer;
+    color: #000;
+}
+
+.logo ul{
+    display: flex;
+    gap: 1rem;
+    position: relative;
+    top: 1rem;
+    color: var(--second-white);   
+}
+
+
+.logo i{
+    font-size: 22px;
+    cursor: pointer;
+    transition: .5s ;
+}
+.logo .menu{
+    display: none;
+}
+.logo i:hover{
+    color: var(--primary-color);
+}
+.nav-menu {
+    color: #000;
+    font-size: 22px;
+    font-weight: bold;
+    
+}
+
+.nav-menu :hover{
+    transition: .5s ease;
+    color: red;
+}
+
+
+@media screen and (max-width:940px) {
+    .logo .menu {
+    display: block;
+    color: #000;
+    position: fixed;
+    left: 1rem;
+    top: 1rem;
+    z-index: 100;
+}
+ .nav-menu{
+        transition: .5s ease-in;
+        flex-direction: column;
+        width: 50%;
+        height: 30vh;
+        left: -200%;
+        align-items: center;
+        background: rgba(0, 0, 0, .8);
+        justify-content: center;
+        z-index: 1;
+    }
+  
+   .active{
+        left: -72%;
+        top: 1rem;
+    }
+    .logo li{
+        margin-right: 1rem;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    .logo h1{
+        font-size: 1rem;
+        position: relative;
+        top: 1rem;
+        left: -1rem;
+    }
+  
+
+
+    
+}
